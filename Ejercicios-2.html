@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+
+  <h1>Capitulo 2</h1>
+
+  <!-- Principio de ejercicio ================================================ -->
+
+  <!-- Títulos -->
+  <h2>Ejercicio 1 - a</h2>
+  <p>Ingresar un número y que se muestre el doble </p>
+
+  <!-- Formulario para ingresar datos -->
+  <input type="number" id="numero1a" />
+  <input type="button" value="Confirmar" onclick="mostrar1a()">
+  
+
+  <!-- Espacio donde se mostrará el resultado -->
+  <p id="resultado1a" >Resultado</p>
+
+  
+  <!-- Script -->
+
+  <script>   
+
+    function mostrar1a(){
+      var valor = document.getElementById("numero1a").value;
+      resultado1a.innerHTML = (valor * 2);
+    }   
+
+  </script>
+
+  <!-- Fin de ejercicio ================================================ -->
+
+
+
+
+</body>
+
+</html>

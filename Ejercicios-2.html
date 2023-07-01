@@ -16,25 +16,229 @@
 
   <!-- Formulario para ingresar datos -->
   <input type="number" id="numero1a" />
-  <input type="button" value="Confirmar" onclick="mostrar1a()">
-  
+  <input type="button" value="Aceptar" onclick="mostrar1a()">
+
 
   <!-- Espacio donde se mostrará el resultado -->
-  <p id="resultado1a" >Resultado</p>
+  <p id="resultado1a">Resultado</p>
 
-  
+
   <!-- Script -->
+  <script>
 
-  <script>   
-
-    function mostrar1a(){
+    function mostrar1a() {
       var valor = document.getElementById("numero1a").value;
       resultado1a.innerHTML = (valor * 2);
-    }   
+    }
+
 
   </script>
 
+
   <!-- Fin de ejercicio ================================================ -->
+  <hr>
+  <!-- Principio de ejercicio ================================================ -->
+
+
+  <h2>Ejercicio 1 b</h2>
+  <p>una función que se ingresa un número y retorne el triple de un número</p>
+
+
+  <input type="number" id="numero1b" />
+  <input type="button" value="Mostrar" onclick="triple()" />
+  <p id="resultado1b">Solucion</p>
+
+
+  <script>
+    function triple() {
+      var valor = document.getElementById("numero1b").value;
+      resultado1b.innerHTML = (valor * 3);
+    }
+  </script>
+  <!-- Fin de ejercicio ================================================ -->
+  <hr>
+
+
+  <!-- Principio de ejercicio c ================================================ -->
+  <h2>ejercicio 1 c </h2>
+  <p>una función que se ingresa un número y retorne la mitad de un número</p>
+
+
+  <input type="number" id="numero1c" />
+  <input type="button" value="Mostrar" onclick="mitad()" />
+  <p id="resultado1c">Solucion</p>
+
+
+  <script>
+    function mitad() {
+      var valor = document.getElementById("numero1c").value;
+      resultado1c.innerHTML = (valor / 2);
+    }
+  </script>
+
+  <!-- Fin de ejercicio c ================================================ -->
+
+  <hr>
+
+  <!-- Principio de ejercicio d ================================================ -->
+
+  <h2>ejercicio 1 D</h2>
+  <p>una función que se ingresa un número y retorne “true” si un número es mayor a 20 </p>
+
+
+  <input type="number" id="numero1d" />
+  <input type="button" value="Mostrar" onclick="mayor()" />
+  <p id="resultado1d">Solucion</p>
+
+
+
+  <script>
+    function mayor() {
+      var valor = document.getElementById("numero1d").value;
+      resultado1d.innerHTML = (valor > 20);
+    }
+  </script>
+
+  <!-- Fin de ejercicio d ================================================ -->
+
+  <hr>
+
+  <!-- Principio de ejercicio E================================================ -->
+
+  <h2>ejercicio 1 e </h2>
+  <p>una función que se ingresa un número y retorne el número más 50</p>
+
+  <input type="number" id="numero1e" />
+  <input type="button" value="Mostrar" onclick="suma50()" />
+  <p id="resultado1e">Solucion</p>
+
+
+  <script>
+    function suma50() {
+      var valor = document.getElementById("numero1e").value;
+      resultado1e.innerHTML = (50 + Number(valor));
+    }
+  </script>
+
+
+
+
+  <!-- Fin de ejercicio E================================================ -->
+
+  <hr>
+
+  <!-- Principio de ejercicio F ================================================ -->
+
+  <h2>ejercicio 1 f</h2>
+  <p>una función que se ingresa un número y retorne el número menos 10</p>
+
+
+
+  <input type="number" id="numero1f" />
+  <input type="button" value="Mostrar" onclick="menor()" />
+  <p id="resultado1f">Solucion</p>
+
+  <script>
+    function menor() {
+      var valor = document.getElementById("numero1f").value;
+      resultado1f.innerHTML = (valor - 10);
+    }
+  </script>
+
+  <!-- Fin de ejercicio F================================================ -->
+
+  <hr>
+
+
+  <!-- Principio de ejercicio E ================================================ -->
+
+  <h2>ejercicio 1 - G </h2>
+  <p>una función que se ingresa un número y retorne el número dividido 2</p>
+
+
+
+  <input type="number" id="numero1G" />
+  <input type="button" value="Mostrar" onclick="dividido()" />
+  <p id="resultado1G">Solucion</p>
+
+
+  <script>
+    function dividido() {
+      var valor = document.getElementById("numero1G").value;
+      resultado1G.innerHTML = (valor / 2);
+    }
+  </script>
+
+
+  <!-- Fin de ejercicio E================================================ -->
+
+<hr>
+
+  <!-- Principio de ejercicio H ================================================ -->
+<H2>Ejercicio 1  - H</H2>
+<p>una función que se ingresa un número y retorne el número Multiplicado por 10</p>
+
+
+
+<input type="number" id="numero1H" />
+  <input type="button" value="Mostrar" onclick="Multiplicado()" />
+  <p id="resultado1H">Solucion</p>
+
+
+
+  <script>
+    function Multiplicado() {
+      var valor = document.getElementById("numero1H").value;
+      resultado1H.innerHTML = (valor * 10);
+    }
+  </script>
+
+
+  <!-- Fin de ejercicio H================================================ -->
+
+
+<hr>
+
+ <!-- Principio de ejercicio  ================================================ -->
+
+<h2>ejercicio 1 - i</h2>
+<p>una función que se ingresa un número y retorne el número multiplicado por 100</p>
+
+
+
+
+<input type="number" id="numero1i" />
+  <input type="button" value="Mostrar" onclick="Multiplicado1i()" />
+  <p id="resultado1i">Solucion</p>
+
+
+
+  <script>
+    function Multiplicado1i() {
+      var valor = document.getElementById("numero1i").value;
+      resultado1i.innerHTML = (valor * 100);
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- Fin de ejercicio H================================================ -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

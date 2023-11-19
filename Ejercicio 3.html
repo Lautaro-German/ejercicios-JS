@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+  <h1>Ejercicio1 A</h1>
+  <p>Se ingresan dos números y se suman.Debe retornarse la frase “La suma de los números es: - - - </p>
+
+
+  <input type="number" id="numeroA1" />
+  <input type="number" id="numeroA2" />
+
+  <input type="button" value="Sumar" onclick="mostrarA()">
+
+
+
+  <p id="resultadoA">Resultado</p>
+
+
+
+  <script>
+
+    function mostrarA() {
+      var valor1 = document.getElementById("numeroA1").value;
+      var valor2 = document.getElementById("numeroA2").value;
+
+      resultadoA.innerHTML = ("La suma de los números es: " + (Number(valor1) + Number(valor2)));
+    }
+
+
+  </script>
+
+  <!-- ============================================================================ -->
+
+  <h1>Ejercicio B</h1>
+  <p>Se ingresa un número y se debe retornar: “La temperatura es de xxx grados. </p>
+
+
+  <input type="number" id="numeroB1" />
+
+
+  <input type="button" value="temperatura" onclick="mostrarB()">
+
+
+
+  <p id="resultadoB">Resultado</p>
+
+
+
+  <script>
+
+    function mostrarB() {
+      var valorB = document.getElementById("numeroB1").value;
+
+
+      resultadoB.innerHTML = ("La tenperatura  es: " + valorB + " grados");
+    }
+
+
+  </script>
+
+
+  <!-- =========================================================== -->
+
+  <hr>
+
+  <!-- Script -->
+
+  <h1>EJERECICIO 1- C</h1>
+
+  <p>Se ingresan dos números y se multiplican.Debe retornarse la frase “La multiplicación de los números es: - - - </p>
+
+
+
+
+
+
+  <input type="number" id="numeroC1" />
+  <input type="number" id="numeroC2" />
+
+  <input type="button" value="Multiplicacion" onclick="mostrarC()">
+
+
+
+  <p id="resultadoC">Resultado</p>
+
+
+
+  <script>
+
+    function mostrarC() {
+
+      var valor1 = document.getElementById("numeroC1").value;
+      var valor2 = document.getElementById("numeroC2").value;
+
+
+      resultadoC.innerHTML = (" EL RESULTADO ES : " + (Number(valor1) * Number(valor2)))
+    }
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+  <!-- Espacio donde se mostrará el resultado -->
+
+
+  <!-- =========================================================== -->
+
+
+  <hr>
+
+  <h2>ejercicio 3 - D</h2>
+
+
+  <p>e ingresan dos números y el segundo se resta al primero.
+    Debe retornarse la frase “A > le resto > y da: - - - </p>
+
+
+
+
+  <input type="number" id="numeroD1" />
+  <input type="number" id="numeroD2" />
+
+  <input type="button" value="Multiplicacion" onClick="mostrarD()">
+
+
+
+  <p id="resultadoD">Resultado</p>
+
+
+
+  <script>
+
+    function mostrarD() {
+
+      var valor1 = document.getElementById("numeroD1").value;
+      var valor2 = document.getElementById("numeroD2").value;
+
+
+      resultadoD.innerHTML = (" EL RESULTADO ES : " + (Number(valor1) - Number(valor2)))
+    }
+
+
+
+
+
+
+
+  </script>
+
+  <hr>
+
+  <!-- =========================================================== -->
+
+  <h2>ejercicio 3 - E </h2>
+
+  <p>Se ingresan dos números y el primero se divide por el segundo.
+    Debe retornarse la frase “El dividido por el da: - - -</p>
+
+
+
+  <input type="number" id="numeroe1" />
+  <input type="number" id="numeroe2" />
+
+  <input type="button" value="Dividir" onClick="mostrare()">
+
+
+
+  <p id="resultadoe">Resultado</p>
+
+
+
+  <script>
+
+    function mostrare() {
+
+      var valor1 = document.getElementById("numeroe1").value;
+      var valor2 = document.getElementById("numeroe2").value;
+
+
+      resultadoe.innerHTML = (" EL RESULTADO ES : " + (Number(valor1) / Number(valor2)))
+    }
+
+
+  </script>
+
+  <!-- =========================================================== -->
+
+  <hr>
+
+  <h2>ejercicio 3 - f</h2>
+  <p>Se ingresa una palabra y se debe retornar “La palabra ingresada es: “ </p>
+
+
+
+
+
+  <input type="text" id="numerof2" />
+
+
+  <input type="button" value="Ver" onClick="mostrarf2()">
+
+
+
+  <p id="resultadof2">Resultado</p>
+
+
+
+  <script>
+
+    function mostrarf2() {
+
+      var valor1 = document.getElementById("numerof2").value;
+
+
+      resultadoe.innerHTML = (" la palabra es  : " + (valor2))
+    }
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

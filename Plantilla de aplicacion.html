@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #resultado {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Aprende JavaScript Jugando!</h1>
+    <p>Haz clic en los botones para interactuar con el código.</p>
+
+    <!-- Botón para saludar -->
+    <button onclick="saludar()">Saludar</button>
+
+    <!-- Botón para cambiar el color de fondo -->
+    <button onclick="cambiarColor()">Cambiar Color</button>
+
+    <!-- Botón para adivinar un número -->
+    <button onclick="adivinaNumero()">Adivina un Número</button>
+
+    <!-- Área para mostrar resultados -->
+    <div id="resultado"></div>
+
+    <script>
+        // Función para mostrar un saludo
+        function saludar() {
+            const nombre = prompt("¿Cómo te llamas?");
+            if (nombre) {
+                document.getElementById("resultado").innerText = `¡Hola, ${nombre}! ¡Bienvenido al mundo de JavaScript!`;
+            } else {
+                document.getElementById("resultado").innerText = "¡Hola, desconocido! Prueba escribir tu nombre la próxima vez.";
+            }
+        }
+
+        // Función para cambiar el color de fondo
+        function cambiarColor() {
+            const colores = ["#FF5733", "#33FF57", "#3357FF", "#F3FF33", "#FF33A8"];
+            const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            document.body.style.backgroundColor = colorAleatorio;
+        }
+
+        // Función para adivinar un número
+        function adivinaNumero() {
+            const numeroSecreto = Math.floor(Math.random() * 10) + 1;
+            const intento = parseInt(prompt("Adivina un número entre 1 y 10"), 10);
+
+            if (intento === numeroSecreto) {
+                document.getElementById("resultado").innerText = `¡Correcto! El número era ${numeroSecreto}. ¡Bien hecho!`;
+            } else {
+                document.getElementById("resultado").innerText = `¡Casi! El número era ${numeroSecreto}. ¡Intenta de nuevo!`;
+            }
+        }
+    </script>
+</body>
+</html>
